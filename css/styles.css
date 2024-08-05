@@ -609,7 +609,16 @@ transform: translate(-50%,-50%);
   right: 24px;
   border: 4px;
   fill: #1d2356;
-
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
+  animation-delay: 250ms;
+}
+.x-button{
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .modal-paragraf{
 letter-spacing: 0.02em;
@@ -672,7 +681,7 @@ color: #8e8f99;
 resize: none;
 }
 .modal-check-text {
-  font-size: 12px / 1.16667 "Roboto", sans-serif;
+  font: 12px / 1.16667 "Roboto", sans-serif;
 letter-spacing: 0.04em;
 line-height: 1.17;
 color: #8e8f99;
@@ -681,7 +690,24 @@ color: #8e8f99;
 .modal-check:checked + .modal-check-text span {
   fill: #f4f4fd;
 }
-
+.modal-check{
+  border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+padding-left: 16px;
+color: #fff;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.modal-check ::placeholder {
+  color: #fff;
+}
+.div-checkbox{
+  margin-bottom: 24px;
+}
 .modal-check-box {
   justify-content: center;
   width: 16px;
@@ -693,9 +719,31 @@ margin-right: 8px;
 font-size: 12px;
 display: inline-flex;
 fill: transparent;
+align-items: center;
 
 }
 .privacy-policy{
   color:#4d5ae5;
 
+}
+.btn-send{
+  border-radius: none;
+  font-family: "Roboto", sans-serif;
+width: 169px;
+height: 56px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+display: block;
+font-weight: 500;
+font-size: 16px;
+text-align: center;
+color: #ffffff;
+background-color: #4d5ae5;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border-radius: 4px;
+margin:0 auto;
+}
+.btn-send:hover .svg-closed-btn,
+.btn-send:focus .svg-closed-btn {
+  fill: #fff;
 }
